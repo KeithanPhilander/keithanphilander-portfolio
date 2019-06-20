@@ -1,0 +1,85 @@
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.2;
+  letter-spacing: 1.2;
+  color: $color-white;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  color: $color-white;
+  font-weight: 300;
+
+  @include respond(tab-port) {
+    font-size: 4rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3.5rem;
+  }
+
+  &--animated {
+    animation: moveInTop 0.5s ease-in-out 0.95s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: normal;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+  &--black {
+    color: $color-black;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 700;
+
+  &--black {
+    color: $color-black;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.color-primary-span {
+  color: $color-primary;
+}
+
+.down-arrow {
+  color: $color-black;
+  background-color: $color-primary-light;
+  padding: 0.8rem 1.2rem;
+  border-radius: 100%;
+  margin-left: 0.5rem;
+  font-size: 1.7rem;
+}
+
+.paragraph {
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+
+  &--small {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    line-height: 1.8rem;
+  }
+}

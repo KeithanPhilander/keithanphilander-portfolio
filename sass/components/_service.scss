@@ -1,0 +1,52 @@
+.service {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 1.5rem;
+  background-color: $color-grey;
+  color: $color-black;
+  width: 26rem;
+  height: 36rem;
+  transition: all ease-in 0.3s;
+
+  @include respond(tab-port) {
+    width: 32rem;
+    height: 40rem;
+  }
+
+  &:hover {
+    background-color: $color-primary-light;
+    color: $color-white;
+  }
+
+  &:hover &__icon-container {
+    border-radius: 100%;
+    background-color: $color-white;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 2.5rem;
+    @include centerElement;
+  }
+
+  &__icon-container {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: $color-primary-light;
+    transition: all ease-in-out 0.5s;
+
+    @include respond(tab-port) {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+
+  &__icon {
+    width: 4rem;
+    @include centerElement;
+  }
+}

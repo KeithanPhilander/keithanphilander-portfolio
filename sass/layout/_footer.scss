@@ -1,0 +1,103 @@
+.footer {
+  position: relative;
+  padding: 10rem 0;
+  margin-top: -8rem;
+  background-color: $color-secondary;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
+  &__social-links {
+    width: 40rem;
+    margin: 0 auto;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  .social {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 100%;
+    background-color: $color-primary;
+    width: 9rem;
+    height: 9rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-light;
+    }
+
+    &__icon {
+      @include centerElement;
+    }
+  }
+
+  &__navigation {
+    display: inline-block;
+    border-top: 1px solid $color-grey;
+    padding-top: 2rem;
+    margin-left: 4rem;
+
+    @include respond(tab-port) {
+      margin-left: 0;
+      padding-top: 0;
+      border-top: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 1.8rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-grey;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      padding-bottom: 7px;
+      transform: translateX(4px) rotate(-7deg);
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+
+  &__copyright {
+    display: inline-block;
+    border-top: 1px solid $color-grey;
+    width: 70%;
+    margin: 0 5rem;
+    text-align: center;
+    float: right;
+    padding-top: 2rem;
+
+    @include respond(tab-port) {
+      padding-top: 4rem;
+      width: 100%;
+      margin: 0 auto;
+      float: none;
+    }
+  }
+}

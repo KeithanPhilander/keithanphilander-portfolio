@@ -1,0 +1,41 @@
+.section-work {
+  background-color: $color-grey;
+
+  padding: 20rem 0;
+
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -25vh;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-about {
+  position: relative;
+  padding: 10rem 0;
+  background-color: rgba($color-secondary, 0.9);
+
+  @include respond(phone) {
+    padding: 10rem 5rem;
+  }
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-contact {
+  position: relative;
+  padding: 10rem 0 20rem 0;
+  background-color: rgba($color-primary, 0.9);
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}

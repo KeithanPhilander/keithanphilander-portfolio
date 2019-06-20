@@ -1,0 +1,67 @@
+.alert {
+  text-align: center;
+  padding: 1rem;
+  background-color: $color-primary-light;
+  color: $color-white;
+  margin-bottom: 2rem;
+  display: none;
+}
+
+.form {
+  background-color: $color-secondary;
+  width: 44rem;
+  height: 62rem;
+  border-radius: 3px;
+  margin: 0 auto;
+
+  &__wrapper {
+    @include centerElement;
+  }
+
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    font-family: inherit;
+    background-color: $color-secondary;
+    border: 3px solid $color-primary;
+    padding: 1.2rem 0;
+    padding-left: 1rem;
+    width: 36.5rem;
+    color: $color-white;
+    @include focus;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border: 3px solid $color-primary-light;
+
+      &:invalid {
+        border: 2px solid;
+      }
+    }
+  }
+
+  textarea {
+    font-family: inherit;
+    background-color: $color-secondary;
+    color: $color-white;
+    border: 2px solid $color-primary;
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    width: 36.5rem;
+    @include focus;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border: 3px solid $color-primary-light;
+    }
+  }
+}
+
+::placeholder {
+  color: $color-white;
+  opacity: 1;
+}
