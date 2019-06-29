@@ -68,6 +68,8 @@ ORDER: base + typography > general layout + grid > pager layout > components
     overflow-x: hidden; } }
 
 html {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
   font-size: 62.5%; }
   @media (max-width: 75em) {
