@@ -55,9 +55,13 @@
     width: 0;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -1000;
     z-index: 4000;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    left: 0;
   }
 
   &__list {
