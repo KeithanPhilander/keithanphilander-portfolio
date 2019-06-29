@@ -513,6 +513,10 @@ body {
     line-height: 1; }
     .popup__close:link:hover, .popup__close:visited:hover {
       color: #00b190; }
+    @media (max-width: 56.25em) {
+      .popup__close:link, .popup__close:visited {
+        height: 100%;
+        width: 100%; } }
 
 .header {
   position: relative;

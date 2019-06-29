@@ -124,3 +124,5 @@ btn6.addEventListener("click", () => {
   //add paragraph
   popupText.innerHTML = projectDescriptions[5];
 });
+
+
