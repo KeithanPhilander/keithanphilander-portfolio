@@ -517,8 +517,11 @@ body {
       color: #00b190; }
     @media (max-width: 56.25em) {
       .popup__close:link, .popup__close:visited {
+        top: 0;
+        right: 0;
         height: 100%;
-        width: 100%; } }
+        width: 100%;
+        z-index: 1; } }
 
 .header {
   position: relative;
