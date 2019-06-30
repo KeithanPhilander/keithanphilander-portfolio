@@ -23,8 +23,8 @@
     @include respond(tab-port) {
       display: flex;
       flex-direction: column;
-      height: 74%;
-      width: 68%;
+      height: 100%;
+      width: 100%;
     }
   }
 
