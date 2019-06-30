@@ -484,8 +484,8 @@ body {
       .popup__content {
         display: flex;
         flex-direction: column;
-        height: 50rem;
-        width: 80%; } }
+        height: 90%;
+        width: 90%; } }
   .popup__left {
     width: 45%;
     display: table-cell;
@@ -527,6 +527,7 @@ body {
       color: #00b190; }
     @media (max-width: 56.25em) {
       .popup__close:link, .popup__close:visited {
+        opacity: 0;
         top: 0;
         right: 0;
         height: 100%;
