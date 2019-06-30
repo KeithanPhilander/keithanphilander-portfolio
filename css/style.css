@@ -276,12 +276,18 @@ body {
     transform: translateY(-10rem);
     transition: all ease-in-out 0.3s;
     opacity: 0; }
+    @media (max-width: 56.25em) {
+      .project__name {
+        transform: translateY(0); } }
   .project__skills {
     position: relative;
     color: #00b190;
     transform: translateY(-10rem);
     transition: all ease-in-out 0.3s;
     opacity: 0; }
+    @media (max-width: 56.25em) {
+      .project__skills {
+        transform: translateY(0); } }
   .project__btn {
     position: relative;
     font-weight: normal;
@@ -291,6 +297,9 @@ body {
     transition: all ease-in-out 0.3s;
     opacity: 0;
     border: 2px solid #00b190; }
+    @media (max-width: 56.25em) {
+      .project__btn {
+        transform: translateY(0); } }
 
 #project1 {
   background-image: url(../img/project1.jpg); }
@@ -496,7 +505,8 @@ body {
         display: block;
         width: 100%; } }
   .popup__btn {
-    border: 1px solid #00b190; }
+    border: 1px solid #00b190;
+    z-index: 20000; }
   .popup:target {
     opacity: 1;
     visibility: visible; }

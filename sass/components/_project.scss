@@ -71,6 +71,10 @@
     transform: translateY(-10rem);
     transition: all ease-in-out 0.3s;
     opacity: 0;
+
+    @include respond(tab-port) {
+      transform: translateY(0);
+    }
   }
 
   &__skills {
@@ -79,6 +83,10 @@
     transform: translateY(-10rem);
     transition: all ease-in-out 0.3s;
     opacity: 0;
+
+    @include respond(tab-port) {
+      transform: translateY(0);
+    }
   }
 
   &__btn {
@@ -90,6 +98,10 @@
     transition: all ease-in-out 0.3s;
     opacity: 0;
     border: 2px solid $color-primary;
+
+    @include respond(tab-port) {
+      transform: translateY(0);
+    }
   }
 }
 
