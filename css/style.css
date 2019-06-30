@@ -484,8 +484,8 @@ body {
       .popup__content {
         display: flex;
         flex-direction: column;
-        height: 90%;
-        width: 90%; } }
+        height: 80%;
+        width: 70%; } }
   .popup__left {
     width: 45%;
     display: table-cell;
