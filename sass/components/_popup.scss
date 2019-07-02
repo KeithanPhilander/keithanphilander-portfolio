@@ -36,7 +36,7 @@
 
     @include respond(tab-port) {
       display: block;
-      height: 100%;
+      height: 65%;
       width: 100%;
     }
   }
@@ -50,6 +50,7 @@
     @include respond(tab-port) {
       display: block;
       width: 100%;
+      height: 35%;
     }
   }
 

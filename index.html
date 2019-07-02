@@ -332,7 +332,7 @@
         </div>
         <!-- TODO: Validation -->
         <div class="row">
-          <form action="#" class="form" id="contactForm">
+          <form action="https://formspree.io/bluegumdev@gmail.com" method="POST" class="form" id="contactForm">
             <div class="alert">Your message has been sent.</div>
             <div class="form__wrapper">
               <div class="form__group">
@@ -340,6 +340,7 @@
                   type="text"
                   class="form__input"
                   id="name"
+                  name="name"
                   placeholder="Name"
                   required
                 />
@@ -349,6 +350,7 @@
                   type="text"
                   class="form__input"
                   id="company"
+                  name="company"
                   placeholder="Company"
                 />
               </div>
@@ -357,6 +359,7 @@
                   type="email"
                   class="form__input"
                   id="email"
+                  name="email"
                   placeholder="Email"
                   required
                 />
@@ -366,6 +369,7 @@
                   type="tel"
                   class="form__input"
                   id="phone"
+                  name="phone"
                   placeholder="Phone"
                   required
                 />
@@ -374,6 +378,7 @@
                 <textarea
                   name="message"
                   id="message"
+                  name="message"
                   cols="30"
                   rows="10"
                   placeholder="Message..."

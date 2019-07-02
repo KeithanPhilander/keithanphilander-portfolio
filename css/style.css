@@ -247,13 +247,16 @@ body {
     opacity: 1; }
   .project:hover .project__name {
     transform: translateY(0);
-    opacity: 1; }
+    opacity: 1;
+    visibility: visible; }
   .project:hover .project__skills {
     transform: translateY(0);
-    opacity: 1; }
+    opacity: 1;
+    visibility: visible; }
   .project:hover .project__btn {
     transform: translateY(0);
-    opacity: 1; }
+    opacity: 1;
+    visibility: visible; }
   .project__overlay {
     content: "";
     position: absolute;
@@ -275,7 +278,8 @@ body {
     margin-bottom: 1.3rem;
     transform: translateY(-10rem);
     transition: all ease-in-out 0.3s;
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
     @media (max-width: 56.25em) {
       .project__name {
         transform: translateY(0); } }
@@ -284,7 +288,8 @@ body {
     color: #00b190;
     transform: translateY(-10rem);
     transition: all ease-in-out 0.3s;
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
     @media (max-width: 56.25em) {
       .project__skills {
         transform: translateY(0); } }
@@ -296,6 +301,7 @@ body {
     transform: translateY(10rem);
     transition: all ease-in-out 0.3s;
     opacity: 0;
+    visibility: hidden;
     border: 2px solid #00b190; }
     @media (max-width: 56.25em) {
       .project__btn {
@@ -494,7 +500,7 @@ body {
     @media (max-width: 56.25em) {
       .popup__left {
         display: block;
-        height: 100%;
+        height: 65%;
         width: 100%; } }
   .popup__right {
     width: 55%;
@@ -504,7 +510,8 @@ body {
     @media (max-width: 56.25em) {
       .popup__right {
         display: block;
-        width: 100%; } }
+        width: 100%;
+        height: 35%; } }
   .popup__btn {
     border: 1px solid #00b190;
     z-index: 20000; }

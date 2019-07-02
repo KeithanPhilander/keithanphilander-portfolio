@@ -34,16 +34,19 @@
   &:hover &__name {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
   }
 
   &:hover &__skills {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
   }
 
   &:hover &__btn {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
   }
 
   &__overlay {
@@ -71,6 +74,7 @@
     transform: translateY(-10rem);
     transition: all ease-in-out 0.3s;
     opacity: 0;
+    visibility: hidden;
 
     @include respond(tab-port) {
       transform: translateY(0);
@@ -83,6 +87,7 @@
     transform: translateY(-10rem);
     transition: all ease-in-out 0.3s;
     opacity: 0;
+    visibility: hidden;
 
     @include respond(tab-port) {
       transform: translateY(0);
@@ -97,6 +102,7 @@
     transform: translateY(10rem);
     transition: all ease-in-out 0.3s;
     opacity: 0;
+    visibility: hidden;
     border: 2px solid $color-primary;
 
     @include respond(tab-port) {
