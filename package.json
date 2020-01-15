@@ -13,5 +13,13 @@
   },
   "dependencies": {
     "surge": "^0.21.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeithanPhilander/keithanphilander-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KeithanPhilander/keithanphilander-portfolio/issues"
+  },
+  "homepage": "https://github.com/KeithanPhilander/keithanphilander-portfolio#readme"
 }
